@@ -1,0 +1,289 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url(/font/AvenirLTStd-Black.otf);
+    src: url(/font/AvenirLTStd-Book.otf);
+    src: url(/font/AvenirLTStd-Roman.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F6FE;
+    font-family: "CustomFont";
+}
+
+header{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    background-color: #4649DD;
+    justify-content: space-between;
+    padding: 15px 40px 25px 40px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.logo{
+    width: 100%;
+    min-width: 150px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.sign{
+    color: #4649DD;
+}
+
+body > header > ul > li:nth-child(6){
+    display: none;
+}
+
+.bi-filter-right{
+    font-size: 40px !important;
+    color: white;
+}
+
+.mobile{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #4649DD;
+    width:70%;
+    height: 100%;
+    padding: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.mobile_view li a{
+    color: white;
+}
+
+.mobile_view li{
+    padding: 6px 0;
+}
+
+.bi-x-circle-fill{
+    color: white;    
+}
+
+.container{
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.profile_picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+.details{
+    padding-left: 20px;
+}
+
+.details h1{
+    font-weight: 800;
+    color: black;
+}
+
+.details p{
+    font-weight: 600;
+    color: black;
+}
+
+.edit_profile{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+}
+
+.edit_profile button{
+    padding: 7px 20px;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.edit_profile a{
+    color: black;
+}
+
+.nav-tabs{
+    margin-top: 40px;
+    border-bottom: 1px solid #7B7B7F;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-tabs li a{
+    font-weight: 800;
+    font-size: 16px;
+    color: black;
+}
+
+.tab-content{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bi-images:before{
+    font-size: 150px;
+    color: #CBCEE1;
+}
+
+.center{
+    text-align: center;
+    padding-top: 70px;
+}
+
+.all_tabbed{
+    display: flex;
+    justify-content: space-between;
+}
+
+.empty{
+    margin-top: 20px;
+    height: 400px;
+    width: 32%;
+    background: linear-gradient(180deg, #EAEBF5 0%, rgba(234, 235, 245, 0) 100%);
+}
+
+input[type=file]{
+    display: none;
+}
+
+label{
+    background-color: #4649DD;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: white;
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.logo_text p{
+    padding: 20px 0 60px 0;
+}
+
+.foot_1{
+    width: 25%;
+    min-width: 300px;
+}
+
+.foot_2{
+    display: flex;
+    justify-content: space-around;
+    width: 72%;
+    min-width: 200px;
+    margin-top: 80px;
+}
+
+.foot_2 a{
+    color: black;
+}
+
+.email, .phone{
+    display: flex;
+}
+
+.email .bi::before, .phone .bi::before{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+/* Media Query */
+@media screen and (max-width:1120px) {
+    header{
+        padding: 15px 10px 25px 10px;
+    }
+}
+@media screen and (max-width:768px) {
+    ul li a{
+        display: none;
+    }
+    body > header > ul > li:nth-child(6){
+        display: block;
+    }
+    .all_tabbed{
+        flex-direction: column;
+    }
+    .empty{
+        width: 90%;
+        margin: auto;
+    }
+    #home > div > div:nth-child(1){
+        display: none;
+    }
+    #home > div > div:nth-child(3){
+        display: none;
+    }
+    .foot_1{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .foot_2{
+        display: none;
+    }
+}
+@media screen and (max-width:550px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    .details{
+        padding-left: 0;
+    }
+    .edit_profile{
+        margin: auto;
+    }
+    .form-switch{
+        display: none;
+    }
+    li{
+        padding: 0 5px;
+    }
+    ul{
+        padding-left: 0;
+    }
+}

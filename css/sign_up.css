@@ -1,0 +1,266 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url(/font/AvenirLTStd-Black.otf);
+    src: url(/font/AvenirLTStd-Book.otf);
+    src: url(/font/AvenirLTStd-Roman.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E5E5E5;
+    font-family: "CustomFont";
+}
+
+header{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px 25px 40px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.logo{
+    width: 100%;
+    min-width: 150px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    color: #6B6B6B;
+}
+
+.sign{
+    color: #4649DD;
+}
+
+.bi-filter-right{
+    font-size: 40px !important;
+    display: none;
+    color: white;
+}
+
+.mobile{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #4649DD;
+    width:70%;
+    height: 100%;
+    padding: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.mobile_view li a{
+    color: white;
+}
+
+.mobile_view li{
+    padding: 6px 0;
+}
+
+.bi-x-circle-fill{
+    color: white;    
+}
+
+.sign_in{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.sign_in_image{
+    width: 45%;
+    height: 100vh;
+}
+
+.sign_in_img{
+    width: 100%;
+    height: 100%;
+}
+
+.sign_in_form{
+    /* padding-top: 208px;
+    padding-left: 88px; */
+    width: 55%;
+}
+
+.form_container{
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 57%;
+}
+
+.form_container h1{
+    font-size: 39px;
+    font-weight: 800;
+    color: #2B2B32;
+}
+
+.sign_in_buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.btnn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 40px;
+    background-color: #4649DD;
+    border-radius: 7px;
+    border: none;
+    color: white;
+}
+
+.btnn1:hover, .btnn2:hover{
+    background-color: #4649dd83;
+    color: white;
+}
+
+.btnn1 i{
+    padding: 0 10px;
+}
+
+.btnn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 40px;
+    background-color: #0047FF;
+    border-radius: 7px;
+    border: none;
+    color: white;
+}
+
+.line1{
+    height: 0;
+    width: 46%;
+    border: 1px solid #d1cfcf;
+}
+
+.bi{
+    background-color: transparent !important;
+    font-size: 18px;
+}
+
+.or{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.or p{
+    margin: 0 10px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.input1{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    border-radius: 7px;
+    border: 1px solid #D3D3D3;
+    height: 43px;
+    outline: 0;
+    padding: 0 10px;
+}
+
+.terms{
+    display: flex;
+    align-items: flex-start;
+}
+
+.terms p{
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+form button{
+    width: 40%;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    background-color: #4649DD;
+    color: white;
+    margin: 15px 0;
+}
+
+/* Media Query */
+@media screen and (max-width:1120px) {
+    .form_container{
+        width: 70%;
+    }
+    .form_container h1{
+        font-size: 30px;
+    }
+    .sign_in_buttons :nth-child(2){
+        width: 40px;
+    }
+}
+@media screen and (max-width:768px) {
+    header{
+        background-color: #4649DD;
+    }
+    .sign_in_image{
+        display: none;
+    }
+    .sign_in_form{
+        width: 100%;
+    }
+    ul li a{
+        display: none;
+    }
+    .bi-filter-right{
+        display: block !important;
+    }
+}
+@media screen and (max-width:550px) {
+    header{
+        padding: 15px 10px 25px 10px;
+    }
+    .form_container{
+        width: 90%;
+    }
+    li{
+        padding: 0 5px;
+    }
+    .input1{
+        flex-direction: column;
+    }
+}

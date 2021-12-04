@@ -1,0 +1,275 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url(/font/AvenirLTStd-Black.otf);
+    src: url(/font/AvenirLTStd-Book.otf);
+    src: url(/font/AvenirLTStd-Roman.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E5E5E5;
+    font-family: "CustomFont";
+}
+
+header{
+    position: relative;
+    display: flex;
+    background-color: #4649DD;
+    justify-content: space-between;
+    padding: 15px 40px 25px 40px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.logo{
+    width: 100%;
+    min-width: 150px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.sign{
+    color: #4649DD;
+}
+
+body > header > ul > li:nth-child(6){
+    display: none;
+}
+
+.bi-filter-right{
+    font-size: 40px !important;
+    color: white;
+}
+
+.mobile{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #4649DD;
+    width:70%;
+    height: 100%;
+    padding: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.mobile_view li a{
+    color: white;
+}
+
+.mobile_view li{
+    padding: 6px 0;
+}
+
+.bi-x-circle-fill{
+    color: white;    
+}
+
+/* body */
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: -15px;
+    align-items: center;
+    width: 100%;
+}
+.main_image{
+    width: 97%;
+}
+
+.wrapper{
+    margin: auto;
+    width: 60%;
+    color: black;
+}
+
+.wrapper h1{
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.wrapper p{
+    padding-left: 25px;
+    line-height: 1.5;
+}
+
+.create{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.line{
+    height: 0;
+    width: 70%;
+    border: 1px solid #8B8B8B;
+    margin-top: 25px;
+}
+
+.exciting{
+    display: flex;
+    align-items: center;
+}
+
+.color{
+    color: #4649DD;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+input[type = "search"]{
+    padding: 10px 15px;
+    width: 78%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+}
+
+.search button{
+    background-color: #4649DD;;
+    border: none;
+    border-radius: 8px;
+    width: 20%;
+    height: 50px;
+    color: white;
+    margin-left: 7px;
+    cursor: pointer;
+}
+footer{
+    background-color: white;
+}
+
+.footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.logo_text p{
+    padding: 20px 0 60px 0;
+}
+
+.foot_1{
+    width: 25%;
+    min-width: 300px;
+}
+
+.foot_2{
+    display: flex;
+    justify-content: space-around;
+    width: 72%;
+    min-width: 200px;
+    margin-top: 80px;
+}
+
+.foot_2 a{
+    color: black;
+}
+
+.email, .phone{
+    display: flex;
+}
+
+.email .bi::before, .phone .bi::before{
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+/* Media Query */
+@media screen and (max-width:1120px) {
+    header{
+        padding: 15px 10px 25px 10px;
+    }
+    .wrapper{
+        width: 85%;
+    }
+}
+@media screen and (max-width:881px) {
+    .wrapper h1{
+        font-weight: 800;
+        font-size: 38px;
+    }
+    
+    .wrapper p{
+        padding-left: 25px;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:768px) {
+    ul li a{
+        display: none;
+    }
+    body > header > ul > li:nth-child(6){
+        display: block;
+    }
+    .wrapper p{
+        display: none;
+    }
+    .foot_1{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .foot_2{
+        display: none;
+    }
+}
+@media screen and (max-width:550px) {
+    .form-switch{
+        display: none;
+    }
+    li{
+        padding: 0 5px;
+    }
+    ul{
+        padding-left: 0;
+    }
+    .wrapper{
+        width: 95%;
+    }
+    .line{
+        display: none;
+    }
+    .search{
+        flex-direction: column;
+    }
+    input[type = "search"]{
+        width: 100%;
+    }
+    .search button{
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+}

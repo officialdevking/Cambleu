@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>CamBleu</title>
+  <link rel="stylesheet" href="/css/public_profile.css" />
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="https://res.cloudinary.com/devking/image/upload/v1636653083/CamBleu/Logo_text_White_1_ydbz3k.png"
+        alt="#" class="logo" />
+    </div>
+
+    <ul>
+      <li><a href="/html/media.html">EXPLORE</a></li>
+      <li><a href="#">LICENSE</a></li>
+      <li><a href="#">UPLOAD</a></li>
+      <li><a href="/html/sign_in.html">SIGN IN</a></li>
+      <li>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        </div>
+      </li>
+      <li><i class="bi bi-filter-right"></i></li>
+    </ul>
+  </header>
+
+  <div class="mobile hide animate__animated animate__fadeInRight">
+    <div class="mobile_view">
+      <li><i class="bi bi-x-circle-fill"></i></li>
+      <li><a href="/html/media.html">EXPLORE</a></li>
+      <li><a href="#">LICENSE</a></li>
+      <li><a href="#">UPLOAD</a></li>
+      <li><a href="/html/sign_in.html">SIGN IN</a></li>
+      <li>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        </div>
+      </li>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="profile_picture">
+      <img src="https://res.cloudinary.com/devking/image/upload/v1636815436/CamBleu/Ellipse_4_dot9g1.png" alt="#"
+        class="profile_picture" />
+    </div>
+    <div class="details">
+      <h4>Richard Tamuno <span> / Edit Profile</span></h4>
+      <p>Set up your Cambleu presence</p>
+    </div>
+  </div>
+
+  <div>
+    <i class="bi bi-list"></i>
+    <ul class="nav nav-tabs flex-column navigation hide">
+      <li class="active1">
+        <a data-toggle="tab" href="#home">Public Profile</a>
+      </li>
+      <li><a data-toggle="tab" href="#menu1">Password</a></li>
+      <li><a data-toggle="tab" href="#menu2">Email Notifications</a></li>
+      <li><a data-toggle="tab" href="#menu3">Manage Gallery</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <ul class="nav nav-tabs flex-column navigate">
+      <li class="active1">
+        <a data-toggle="tab" href="#home">Public Profile</a>
+      </li>
+      <li><a data-toggle="tab" href="#menu1">Password</a></li>
+      <li><a data-toggle="tab" href="#menu2">Email Notifications</a></li>
+      <li><a data-toggle="tab" href="#menu3">Manage Gallery</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <div class="change_profile">
+          <div class="profile_picture_2">
+            <img src="https://res.cloudinary.com/devking/image/upload/v1636815436/CamBleu/Ellipse_4_dot9g1.png" alt="#"
+              class="profile_picture_2" />
+          </div>
+          <div class="btns">
+            <button>Upload new picture</button>
+            <button>Delete</button>
+          </div>
+        </div>
+
+        <div class="form_space">
+          <div class="general">
+            <div class="heading">
+              <h4>Generals</h4>
+              <div class="gen_line"></div>
+            </div>
+
+            <div class="basic">
+              <div class="inp">
+                <label>First Name</label>
+                <input type="text" />
+              </div>
+              <div class="inp">
+                <label>Middle Name</label>
+                <input type="text" />
+              </div>
+              <div class="inp">
+                <label>Last Name</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="pass">
+              <div class="inp">
+                <label>Username</label>
+                <input type="text" />
+              </div>
+              <div class="inp">
+                <label>Password</label>
+                <div class="password">
+                  <input type="password" />
+                  <p class="show"><a href="#">SHOW</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="heading">
+              <h4>Contact</h4>
+              <div class="gen_line"></div>
+            </div>
+            <div class="pass">
+              <div class="inp">
+                <label>Mobile Phone</label>
+                <div class="password_1">
+                  <input type="text" />
+                  <p class="cont">
+                    <img src="https://res.cloudinary.com/devking/image/upload/v1637688971/CamBleu/Vector_fdqhyy.png"
+                      alt="#" />
+                  </p>
+                </div>
+              </div>
+              <div class="inp">
+                <label>Mobile Phone</label>
+                <div class="password_1">
+                  <input type="text" />
+                  <p class="cont">
+                    <img
+                      src="https://res.cloudinary.com/devking/image/upload/v1637688971/CamBleu/x30_8.Whatsapp_mfhawi.png"
+                      alt="#" />
+                  </p>
+                </div>
+              </div>
+              <div class="inp">
+                <label>Mobile Phone</label>
+
+                <div class="password_1">
+                  <input type="text" />
+                  <p class="cont">
+                    <img src="https://res.cloudinary.com/devking/image/upload/v1637688971/CamBleu/email_1_1_kvojxy.png"
+                      alt="#" />
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="basic">
+              <div class="inp">
+                <label>Address</label>
+                <input type="text" />
+              </div>
+              <div class="inp">
+                <label for="cars">City</label>
+                <select name="cars" id="cars" class="select">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="inp">
+                <label>Country</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="heading">
+              <h4>BIO</h4>
+              <div class="gen_line"></div>
+            </div>
+
+            <div class="inp">
+              <label>About Me</label>
+              <div class="selected">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum que laudantium, totam
+                  rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                  quasi architecto beatae vitae dicta su
+                </p>
+              </div>
+            </div>
+
+            <button type="submit" class="submit">Save Changes</button>
+          </div>
+        </div>
+      </div>
+      <div id="menu1" class="tab-pane fade">
+        <div class="heading">
+          <h4>Change Password</h4>
+          <div class="gen_line"></div>
+        </div>
+
+        <div class="basic1">
+          <div class="inp">
+            <label>Old password</label>
+            <input type="text" />
+          </div>
+          <div class="inp">
+            <label>Password</label>
+            <div class="password">
+              <input type="password" />
+              <p class="show"><a href="#">SHOW</a></p>
+              <p>Minimum 6 characters</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <div class="heading">
+          <h4>Alerts & Notifications</h4>
+          <div class="gen_line"></div>
+        </div>
+        <div class="basic1">
+          <p>Send me:</p>
+          <div class="checkboxes">
+            <div class="checked">
+              <input type="checkbox">
+              <p>Cambleu Communication</p>
+            </div>
+            <p>Get Cambleu news, announcements, and product updates</p>
+            <hr>
+          </div>
+
+          <div class="checkboxes">
+            <div class="checked">
+              <input type="checkbox">
+              <p>Account Activity</p>
+            </div>
+            <p>Get important notifications about you or activity you've missed</p>
+            <hr>
+          </div>
+
+          <div class="checkboxes">
+            <div class="checked">
+              <input type="checkbox">
+              <p>Meetups Near You</p>
+            </div>
+            <p>Get an email when a Cambleu Meetup is posted close to my location</p>
+            <hr>
+          </div>
+        </div>
+
+        <div class="heading">
+          <h4>Account Activity</h4>
+          <div class="gen_line"></div>
+        </div>
+
+        <div class="basic1">
+          <p>Email me when:</p>
+          <div class="checkboxes">
+            <div class="checked">
+              <input type="checkbox">
+              <p>someone comments on one of my shots</p>
+            </div>
+            <hr>
+          </div>
+
+          <div class="checkboxes">
+            <div class="checked">
+              <input type="checkbox">
+              <p>someone mentions me</p>
+            </div>
+            <hr>
+          </div>
+
+          <div class="checkboxes">
+            <div class="checked">
+              <input type="checkbox">
+              <p>someone shares on one of my shots</p>
+            </div>
+            <hr>
+          </div>
+
+          <div class="checkboxes">
+            <div class="checked">
+              <input type="checkbox">
+              <p>someone likes on one of my shots</p>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu3" class="tab-pane fade tables">
+        <div class="table_scroll">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Date Created</th>
+                <th scope="col">Link</th>
+                <th scope="col">Status</th>
+                <th scope="col">Updated</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Andy John</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="activeonce">Active</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy Femi</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="hiddenonce">Hidden</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy John</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="activeonce"> Active</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy Femi</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="hiddenonce">Hidden</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy John</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="activeonce"> Active</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy Femi</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="hiddenonce">Hidden</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy John</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="activeonce"> Active</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy Femi</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="hiddenonce">Hidden</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy John</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="activeonce"> Active</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy Femi</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="hiddenonce">Hidden</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy John</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="activeonce"> Active</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy Femi</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="hiddenonce">Hidden</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy John</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="activeonce"> Active</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy Femi</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="hiddenonce">Hidden</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">Andy John</th>
+                <td>13/05/21</td>
+                <td>fu9jjn./dasad.ojweh8wio</td>
+                <td><button class="activeonce"> Active</button></td>
+                <td>Today</td>
+                <td>View Gallery</td>
+                <td><i class="bi bi-trash"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="foot_1">
+        <div class="logo_text">
+          <img src="https://res.cloudinary.com/devking/image/upload/v1636996801/CamBleu/Logo_text_Coloured_1_jnatvl.png"
+            alt="#" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod <span>tempor</span>
+          </p>
+        </div>
+
+        <div class="contact">
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <p>info@cambleu.com</p>
+          </div>
+          <div class="phone">
+            <i class="bi bi-telephone"></i>
+            <p>+234 70342313244</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot_2">
+        <div class="services">
+          <p>Services</p>
+          <p><a href="#">Upload</a></p>
+          <p><a href="#">Upload</a></p>
+          <p><a href="#">Upload</a></p>
+          <p><a href="#">Upload</a></p>
+        </div>
+
+        <div class="support">
+          <p>Support</p>
+          <p><a href="#">Upload</a></p>
+          <p><a href="#">Upload</a></p>
+          <p><a href="#">Upload</a></p>
+          <p><a href="#">Upload</a></p>
+        </div>
+
+        <div class="Company">
+          <p>Company</p>
+          <p><a href="#">Upload</a></p>
+          <p><a href="#">Upload</a></p>
+          <p><a href="#">Upload</a></p>
+          <p><a href="#">Upload</a></p>
+        </div>
+
+        <div class="Legal">
+          <p>Legal</p>
+          <p><a href="#">Claim</a></p>
+          <p><a href="#">Privacy</a></p>
+          <p><a href="#">Terms</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/public_profile.js"></script>
+</body>
+
+</html>
