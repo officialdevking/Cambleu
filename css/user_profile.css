@@ -45,7 +45,11 @@ li{
 a{
     text-decoration: none;
     color: white;
-    font-weight: 500;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
 }
 
 .sign{
@@ -78,6 +82,11 @@ body > header > ul > li:nth-child(6){
 
 .mobile_view li a{
     color: white;
+}
+
+.mobile_view li a{
+    text-decoration: none;
+    color: black;
 }
 
 .mobile_view li{
