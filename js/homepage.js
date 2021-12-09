@@ -41,6 +41,7 @@ function darkMode() {
 
     let color = document.querySelectorAll('.foot_2 a')
     Array.from(color).forEach(clr =>{
+        console.log(clr);
         clr.classList.add("textColor")
     })
 
