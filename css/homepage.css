@@ -47,6 +47,10 @@ a{
     font-weight: 500;
 }
 
+ul li a:hover{
+    color: rgb(207, 201, 201);
+}
+
 .sign{
     color: #4649DD;
 }
@@ -103,7 +107,7 @@ body > header > ul > li:nth-child(6){
 .wrapper{
     margin: auto;
     width: 60%;
-    color: black;
+    /* color: black; */
 }
 
 .wrapper h1{
@@ -296,6 +300,27 @@ footer{
 .email .bi::before, .phone .bi::before{
     font-size: 20px;
     padding-right: 10px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    border: none !important;
+}
+.light-mode {
+    background-color: #E5E5E5;
+    color: black;
+}
+.toBe{
+    display: none;
+}
+
+.backgroundColor{
+    background-color: black !important;
+}
+
+.textColor{
+    color: white;
 }
 
 /* Media Query */

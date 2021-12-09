@@ -108,8 +108,6 @@ a{
 }
 
 .sign_in_form{
-    /* padding-top: 208px;
-    padding-left: 88px; */
     width: 55%;
 }
 
@@ -123,7 +121,7 @@ a{
 .form_container h1{
     font-size: 39px;
     font-weight: 800;
-    color: #2B2B32;
+    /* color: #2B2B32; */
 }
 
 .sign_in_buttons{
@@ -211,6 +209,19 @@ form button{
     border: none;
     background-color: #4649DD;
     color: white;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    border: none !important;
+}
+.light-mode {
+    background-color: #E5E5E5;
+    color: black;
+}
+.toBe{
+    display: none;
 }
 
 /* Media Query */

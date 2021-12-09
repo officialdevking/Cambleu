@@ -37,17 +37,25 @@ li{
     padding: 0 20px;
 }
 
+ul li a{
+    color: white;
+}
+
 a{
     text-decoration: none;
-    color: white;
     font-weight: 500;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(150, 147, 147);
 }
 
 .sign{
     color: #4649DD;
 }
 
-body > header > ul > li:nth-child(2){
+body > header > ul > li:nth-child(3){
     display: none;
 }
 
@@ -124,12 +132,12 @@ body > header > ul > li:nth-child(2){
 
 .details h4{
     font-weight: 800;
-    color: black;
+    /* color: black; */
 }
 
 .details p{
     font-weight: 600;
-    color: black;
+    /* color: black; */
 }
 
 .save_like{
@@ -144,6 +152,7 @@ body > header > ul > li:nth-child(2){
     background-color: #F3F3F4;
     width: 50px;
     height: 30px;
+    color: black;
 }
 
 .full_img{
@@ -163,6 +172,7 @@ textarea{
     outline: 0;
     padding-left: 10px;
     padding-top: 10px;
+    color: black;
 }
 
 .submit_comment{
@@ -196,7 +206,7 @@ textarea{
 
 .comment_text{
     padding-left: 20px;
-    color: black;
+    /* color: black; */
 }
 
 .head{
@@ -234,6 +244,7 @@ textarea{
     border: 1px solid #E7E7E9;
     border-radius: 7px;
     margin: 10px 0;
+    color: black;
 }
 
 .love i{
@@ -281,9 +292,9 @@ footer{
     margin-top: 80px;
 }
 
-.foot_2 a{
+/* .foot_2 a{
     color: black;
-}
+} */
 
 .email, .phone{
     display: flex;
@@ -292,6 +303,27 @@ footer{
 .email .bi::before, .phone .bi::before{
     font-size: 20px;
     padding-right: 10px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    border: none !important;
+}
+.light-mode {
+    background-color: #E5E5E5;
+    color: black;
+}
+.toBe{
+    display: none;
+}
+
+.backgroundColor{
+    background-color: black !important;
+}
+
+.textColor{
+    color: white;
 }
 
 /* Media Query */
@@ -304,7 +336,7 @@ footer{
     ul li a{
         display: none;
     }
-    body > header > ul > li:nth-child(2){
+    body > header > ul > li:nth-child(3){
         display: block;
     }
     .bio_data{

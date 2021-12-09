@@ -108,12 +108,10 @@ body > header > ul > li:nth-child(6){
 
 .details h1{
     font-weight: 800;
-    color: black;
 }
 
 .details p{
     font-weight: 600;
-    color: black;
 }
 
 .edit_profile{
@@ -228,6 +226,34 @@ footer{
     font-size: 20px;
     padding-right: 10px;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    border: none !important;
+}
+
+.light-mode {
+    background-color: #E5E5E5;
+    color: black;
+}
+
+.toBe{
+    display: none;
+}
+
+.backgroundColor{
+    background-color: black !important;
+}
+
+.textColor{
+    color: white !important;
+}
+
+.textColor:active, .textColor:focus{
+    color: black !important;
+}
+
 
 /* Media Query */
 @media screen and (max-width:1120px) {
